@@ -64,7 +64,5 @@ namespace ObsessedCoder.GlobalExceptionMiddleware
                 await context.Response.WriteAsync(JsonConvert.SerializeObject(errorResponse), Encoding.UTF8);
             }
         }
-
-
     }
 }

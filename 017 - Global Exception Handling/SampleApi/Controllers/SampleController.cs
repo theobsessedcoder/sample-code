@@ -18,7 +18,7 @@ namespace SampleApi.Controllers
         [HttpGet]
         public void ThrowUnexpectedException()
         {
-            //This will result in a 404:
+            //This will result in a 500:
             throw new UnexpectedException("Something unexpected happened.");
         }
 
@@ -26,7 +26,7 @@ namespace SampleApi.Controllers
         [HttpGet]
         public void ThrowNotFoundException()
         {
-            //This will result in a 500:
+            //This will result in a 404:
             throw new SomethingNotFoundException("Something was not found.");
         }
     }
